@@ -1,0 +1,34 @@
+{
+  "name": "@bygnet/ads",
+  "version": "1.0.0",
+  "description": "Byg Platform's hand-made advertisements and index.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BygNet/Ads.git"
+  },
+  "keywords": [
+    "ads",
+    "advertisements",
+    "social-network",
+    "byg"
+  ],
+  "license": "Apache-2.0",
+  "author": {
+    "name": "ash",
+    "email": "ash@a35.dev",
+    "url": "https://a35.dev"
+  },
+  "type": "module",
+  "main": "src/buildIndex.ts",
+  "scripts": {
+    "build": "bun run src/buildIndex.ts",
+    "test": "BASE_URL=https://example.com bun run src/buildIndex.ts",
+    "format": "prettier --write src/",
+    "ci": "bun install && bun run build"
+  },
+  "dependencies": {
+    "@bygnet/types": "^1.2.0",
+    "@types/bun": "^1.3.8",
+    "prettier": "^3.8.1"
+  }
+}
